@@ -59,4 +59,8 @@ gradle-app.setting
 
 # End of https://www.toptal.com/developers/gitignore/api/gradle,java,visualstudiocode
 
+# Exercism project files
 **/.exercism/
+**/.classpath
+**/.project
+**/.settings/org.eclipse.buildship.core.prefs
