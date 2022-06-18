@@ -1,9 +1,10 @@
-public class Twofer {
+import java.util.Optional;
 
+public class Twofer {
     
-    private static final String BASE_MESSAGE = "One for name, one for me.";
+    private static final String BASE_MESSAGE = "One for %s, one for me.";
 
     public String twofer(String name) {
-        return BASE_MESSAGE.replace("name", (name == null) ? "you" : name);
+        return String.format(BASE_MESSAGE, Optional.ofNullable(name).orElse("you"));
     }
 }
